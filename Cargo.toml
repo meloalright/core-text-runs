@@ -1,0 +1,17 @@
+[package]
+name = "core-text-runs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "core_text_runs"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[[bin]]
+name = "core-text-runs"
+path = "src/main.rs"
+
+[dependencies]
+core-text = "13.3"
+core-graphics = "0.17"
+core-foundation = "0.6"
