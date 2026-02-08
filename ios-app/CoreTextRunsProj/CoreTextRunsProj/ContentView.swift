@@ -27,7 +27,7 @@ struct ContentView: View {
     }
     
     func runAnalysis() {
-        let testString = "Hello, Java; 世界;! 🌍"
+        let testString = "Hello, Java; 世界;! 💇‍♀️🌍"
         
         // Create output string
         var result = "Number of lines: 1\n"
@@ -49,6 +49,8 @@ struct ContentView: View {
             
             // Call Rust function
             split_str_into_runs(cString, 16.0)
+            
+            split_and_shape_text(cString, 16.0)
             
             // Flush and restore stdout
             fflush(stdout)

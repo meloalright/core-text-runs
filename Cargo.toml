@@ -12,6 +12,8 @@ name = "core-text-runs"
 path = "src/main.rs"
 
 [dependencies]
-core-text = "13.3"
-core-graphics = "0.17"
-core-foundation = "0.6"
+core-text = { version = "19.2" }
+core-graphics = "0.22"
+core-foundation = "0.9.0"
+harfbuzz_rs = { version = "2.0.1", features = ["rusttype"] }
+harfbuzz-sys = { version = "0.5", default-features = false }

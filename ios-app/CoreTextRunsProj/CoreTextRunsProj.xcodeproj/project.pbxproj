@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF1831992F2FDAB9005B53C3 /* libcore_text_runs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1831982F2FDAB9005B53C3 /* libcore_text_runs.a */; };
+		AF1831C42F390CCA005B53C3 /* libcore_text_runs 2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1831C32F390CCA005B53C3 /* libcore_text_runs 2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 		AF18315D2F2FD415005B53C3 /* CoreTextRunsProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreTextRunsProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF18316D2F2FD416005B53C3 /* CoreTextRunsProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTextRunsProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1831772F2FD416005B53C3 /* CoreTextRunsProjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTextRunsProjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF1831982F2FDAB9005B53C3 /* libcore_text_runs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcore_text_runs.a; sourceTree = "<group>"; };
+		AF1831C32F390CCA005B53C3 /* libcore_text_runs 2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcore_text_runs 2.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF1831992F2FDAB9005B53C3 /* libcore_text_runs.a in Frameworks */,
+				AF1831C42F390CCA005B53C3 /* libcore_text_runs 2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +85,7 @@
 				AF1831702F2FD416005B53C3 /* CoreTextRunsProjTests */,
 				AF18317A2F2FD416005B53C3 /* CoreTextRunsProjUITests */,
 				AF18315E2F2FD415005B53C3 /* Products */,
-				AF1831982F2FDAB9005B53C3 /* libcore_text_runs.a */,
+				AF1831C32F390CCA005B53C3 /* libcore_text_runs 2.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -420,6 +420,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = rustq.org.CoreTextRunsProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -454,6 +455,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = rustq.org.CoreTextRunsProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
